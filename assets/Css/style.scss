@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin customize-hr {
+    hr {
+        margin-top: 12px;
+        border: 2px solid rgb(0, 0, 0);
+        opacity: 1;
+        width: 22.52%;
+        height: 1px;
+        border-radius: 10px;
+    }
+}
+
+@mixin customize-btn {
+    button {
+        width: 181px;
+        height: 48px;
+        border-radius: 5px;
+    }
+}
+
+header {
+    background-color: #202020;
+    position: relative;
+    z-index: 9999;
+
+
+    nav {
+
+        .logo-side {
+            img {
+                height: 53px;
+            }
+
+            h1 {
+                // border: 1px solid aqua;
+                width: 171px;
+                height: 29px;
+                font-size: 24px;
+                line-height: 29.05px;
+            }
+        }
+
+        ul li {
+            display: inline;
+            flex-grow: 0.2;
+
+            a {
+                text-transform: capitalize;
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 3%;
+                color: white;
+            }
+        }
+    }
+}
+
+
+main .section-one {
+    background-image: url('../img/section-one-bg/graphic-designers-meeting.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5d5d5d;
+    background-attachment: fixed;
+    // height:852px;
+    width: 100%;
+    height: 100vh;
+    top: -10px;
+
+
+    .hero-side {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+
+        p {
+            font-weight: 700;
+
+            &:nth-child(2) {
+                width: 60%;
+
+                span {
+                    border-bottom: 2px solid;
+                    border-color: red;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 60%;
+                font-weight: 400;
+            }
+        }
+
+        @include customize-btn();
+    }
+}
+
+main .section-two {
+    height: 100vh;
+
+    .bg-image-firstside {
+        background-image: url('../img/section-two/section-two_bg.png');
+        background-repeat: no-repeat;
+        height: 508.5px;
+        width: 80%;
+    }
+
+    .page-two-secondside {
+        width: 46%;
+        @include customize-hr();
+
+        hr {
+            opacity: 0.1;
+        }
+
+        @include customize-btn();
+    }
+}
+
+main .section-three {
+    height: 100vh;
+    color: white;
+    @include customize-hr();
+
+    .page-three-firstside {
+
+        p {
+            width: 100%;
+
+            &:nth-child(2) {
+                width: 60%;
+            }
+
+            &:nth-child(3) {
+                width: 70%;
+            }
+        }
+
+        @include customize-btn();
+
+    }
+
+    .page-three-secondside {
+        flex-wrap: wrap;
+        border: 1px solid red;
+
+
+        .custom-cardsize {
+            width: 263px;
+            height: 168px;
+            border: 1px solid red;
+            background-color: white;
+            position: relative;
+
+            .card-up-circular_area {
+                border: 2px solid white;
+                border-radius: 50%;
+                background-color: red;
+                width: 82px;
+                height: 82px;
+                overflow: hidden;
+                position: absolute;
+                top: -25%;
+                right: 35%;
+                
+
+                img {
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    background-color: red;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #202020;
+  position: relative;
+  z-index: 9999;
+}
+header nav .logo-side img {
+  height: 53px;
+}
+header nav .logo-side h1 {
+  width: 171px;
+  height: 29px;
+  font-size: 24px;
+  line-height: 29.05px;
+}
+header nav ul li {
+  display: inline;
+  flex-grow: 0.2;
+}
+header nav ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: white;
+}
+
+main .section-one {
+  background-image: url("../img/section-one-bg/graphic-designers-meeting.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5d5d5d;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  top: -10px;
+}
+main .section-one .hero-side {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+main .section-one .hero-side p {
+  font-weight: 700;
+}
+main .section-one .hero-side p:nth-child(2) {
+  width: 60%;
+}
+main .section-one .hero-side p:nth-child(2) span {
+  border-bottom: 2px solid;
+  border-color: red;
+}
+main .section-one .hero-side p:nth-child(3) {
+  width: 60%;
+  font-weight: 400;
+}
+main .section-one .hero-side button {
+  width: 181px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+main .section-two {
+  height: 100vh;
+}
+main .section-two .bg-image-firstside {
+  background-image: url("../img/section-two/section-two_bg.png");
+  background-repeat: no-repeat;
+  height: 508.5px;
+  width: 80%;
+}
+main .section-two .page-two-secondside {
+  width: 46%;
+}
+main .section-two .page-two-secondside hr {
+  margin-top: 12px;
+  border: 2px solid rgb(0, 0, 0);
+  opacity: 1;
+  width: 22.52%;
+  height: 1px;
+  border-radius: 10px;
+}
+main .section-two .page-two-secondside hr {
+  opacity: 0.1;
+}
+main .section-two .page-two-secondside button {
+  width: 181px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+main .section-three {
+  height: 100vh;
+  color: white;
+}
+main .section-three hr {
+  margin-top: 12px;
+  border: 2px solid rgb(0, 0, 0);
+  opacity: 1;
+  width: 22.52%;
+  height: 1px;
+  border-radius: 10px;
+}
+main .section-three .page-three-firstside p {
+  width: 100%;
+}
+main .section-three .page-three-firstside p:nth-child(2) {
+  width: 60%;
+}
+main .section-three .page-three-firstside p:nth-child(3) {
+  width: 70%;
+}
+main .section-three .page-three-firstside button {
+  width: 181px;
+  height: 48px;
+  border-radius: 5px;
+}
+main .section-three .page-three-secondside {
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+main .section-three .page-three-secondside .custom-cardsize {
+  width: 263px;
+  height: 168px;
+  border: 1px solid red;
+  background-color: white;
+  position: relative;
+}
+main .section-three .page-three-secondside .custom-cardsize .card-up-circular_area {
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: red;
+  width: 82px;
+  height: 82px;
+  overflow: hidden;
+  position: absolute;
+  top: -25%;
+  right: 35%;
+}
+main .section-three .page-three-secondside .custom-cardsize .card-up-circular_area img {
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
