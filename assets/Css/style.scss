@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
+
 @mixin customize-hr {
     hr {
         margin-top: 12px;
@@ -23,6 +27,62 @@
     }
 }
 
+@mixin customize-card {
+    .custom-cardsize {
+        width: 263px;
+        height: 168px;
+        border-radius: 5px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        color: black;
+
+        h2 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            margin: 0;
+            padding: 15px 0;
+
+        }
+
+        p {
+            color: #696969;
+            width: 80%;
+            font-size: 11px;
+            margin: 0;
+
+        }
+
+        .card-up-circular_area {
+            border: 2px solid white;
+            border-radius: 50%;
+            background-color: red;
+            width: 82px;
+            height: 82px;
+            overflow: hidden;
+            position: absolute;
+            top: -25%;
+            right: 35%;
+
+
+            img {
+                border: 2px solid white;
+                border-radius: 50%;
+                background-color: white;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+    }
+}
+
 header {
     background-color: #202020;
     position: relative;
@@ -37,7 +97,6 @@ header {
             }
 
             h1 {
-                // border: 1px solid aqua;
                 width: 171px;
                 height: 29px;
                 font-size: 24px;
@@ -68,7 +127,6 @@ main .section-one {
     background-size: cover;
     background-color: #5d5d5d;
     background-attachment: fixed;
-    // height:852px;
     width: 100%;
     height: 100vh;
     top: -10px;
@@ -149,57 +207,9 @@ main .section-three {
     .page-three-secondside {
         flex-wrap: wrap;
 
+        @include customize-card();
 
         .custom-cardsize {
-            width: 263px;
-            height: 168px;
-            border-radius: 5px;
-            background-color: white;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-            color: black;
-
-            h2 {
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 700;
-                margin: 0;
-                padding: 15px 0;
-
-            }
-
-            p {
-                color: #696969;
-                width: 80%;
-                font-size: 11px;
-                margin: 0;
-
-            }
-
-            .card-up-circular_area {
-                border: 2px solid white;
-                border-radius: 50%;
-                background-color: red;
-                width: 82px;
-                height: 82px;
-                overflow: hidden;
-                position: absolute;
-                top: -25%;
-                right: 35%;
-
-
-                img {
-                    border: 2px solid white;
-                    border-radius: 50%;
-                    background-color: white;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
 
             &:nth-child(3),
             &:nth-child(4) {
@@ -250,10 +260,223 @@ main .section-four {
     }
 
     .page-four-imageside {
-
         margin-top: 5%;
-        
+    }
+}
+
+main .section-five {
+    height: 100vh;
+
+    .page-five-upside {
+
+        @include customize-hr();
+
+        hr {
+            width: 200px;
+            border: 0.1px solid;
+        }
+
+        .circles {
+            hr {
+                width: 234px;
+                margin-top: 7px;
+            }
+
+            .circle-1,
+            .circle-2,
+            .circle-3,
+            .circle-4,
+            .circle-5 {
+                width: 16px;
+                height: 16px;
+                border: 1px solid white;
+                border-radius: 100px;
+                background-color: white;
+                margin-left: 5px;
+            }
+
+            .circle-2 {
+                border: 2px solid red;
+                background-color: black;
+            }
+        }
+
+        p {
+            width: 40%;
+        }
+    }
+
+    .page-five-body {
+        margin-top: 9%;
+
+        @include customize-card();
+
+        .custom-cardsize {
+            width: 369.86px;
+            height: 217.68px;
+
+            .card-up-circular_area {
+                border: 3px solid white;
+                background-color: #FF3839;
+                width: 98.76px;
+                height: 98.76px;
+                right: 36.5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    border: none;
+                    background-color: #FF3839;
+                    width: 20px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        i {
+            color: #FF3839;
+        }
+
+        i:hover {
+            color: yellow;
+        }
 
     }
 
+}
+
+
+
+main .section-six {
+    height: 100vh;
+
+    .page-six-upside {
+        height: 30rem;
+
+        p {
+            width: 35%;
+            text-align: center
+        }
+
+        .page-six-upside-first {
+
+            padding: 0px 0 20px;
+            @include customize-hr();
+
+            hr {
+                width: 163px;
+                border-color: #D8D8D8;
+            }
+        }
+
+        .custom-accordion {
+            height: 84px;
+            width: 972px;
+            padding-bottom: 12%;
+
+            .custom-accordion-item {
+                padding-top: 20px;
+
+                h2 {
+                    outline: none;
+                    border: 1px solid #F1F1F1;
+                    border-radius: 5px;
+
+                }
+
+                button {
+                    background-color: #F1F1F1;
+                    color: #333335;
+                    outline: none;
+
+                }
+
+                button:focus {
+                    background-color: #202020;
+                    color: rgba(255, 255, 255, 0.744);
+                    outline: none;
+                }
+
+
+
+
+
+            }
+
+        }
+
+    }
+}
+
+main .section-seven {
+    background-color: #F1F1F1;
+
+    .page-seven {
+
+        .page-seven-firstside {
+            @include customize-hr();
+
+            hr {
+                opacity: 0.1;
+            }
+            p {
+                width: 93%;
+
+                
+            }
+
+
+            form {
+
+                .form-group,
+                .form-group-comment {
+                    margin: 15px 0;
+                    height: 60px;
+                    width: 533px;
+                    border-radius: 5px;
+                    border: 1px solid #CACACA;
+                    overflow: hidden;
+                }
+
+                input {
+                    margin-left: 10px;
+                    height: 58px;
+                    width: 520px;
+                    border: none;
+                    outline: none;
+                }
+
+                textarea {
+                    margin-left: 10px;
+                    width: 520px;
+                    height: 50px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                }
+
+                button {
+                    height: 48px;
+                    width: 181px;
+                    border-radius: 5px;
+
+                }
+            }
+        }
+
+        .page-seven-secondside {
+            height: 90%;
+
+            img {
+                // height: 100%;
+                border-radius: 0px;
+
+            }
+        }
+    }
+}
+
+footer{
+    height: 100vh;
 }
