@@ -9,8 +9,10 @@
 }
 
 header {
+  width: 100%;
   background-color: #202020;
-  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.34);
+  position: fixed;
   z-index: 9999;
 }
 header nav .logo-side img {
@@ -69,7 +71,6 @@ main .section-one .hero-side button {
   height: 48px;
   border-radius: 5px;
 }
-
 main .section-two {
   height: 100vh;
 }
@@ -98,7 +99,6 @@ main .section-two .page-two-secondside button {
   height: 48px;
   border-radius: 5px;
 }
-
 main .section-three {
   height: 100vh;
   color: white;
@@ -175,7 +175,6 @@ main .section-three .page-three-secondside .custom-cardsize .card-up-circular_ar
 main .section-three .page-three-secondside .custom-cardsize:nth-child(3), main .section-three .page-three-secondside .custom-cardsize:nth-child(4) {
   margin-top: 70px;
 }
-
 main .section-four .page-four-upside p {
   width: 35%;
 }
@@ -209,7 +208,6 @@ main .section-four .page-four-bodyside-btns input:checked + label {
 main .section-four .page-four-imageside {
   margin-top: 5%;
 }
-
 main .section-five {
   height: 100vh;
 }
@@ -224,6 +222,9 @@ main .section-five .page-five-upside hr {
 main .section-five .page-five-upside hr {
   width: 200px;
   border: 0.1px solid;
+}
+main .section-five .page-five-upside .circles {
+  margin-top: 3px;
 }
 main .section-five .page-five-upside .circles hr {
   width: 234px;
@@ -322,7 +323,6 @@ main .section-five .page-five-body i {
 main .section-five .page-five-body i:hover {
   color: yellow;
 }
-
 main .section-six {
   height: 100vh;
 }
@@ -371,7 +371,6 @@ main .section-six .page-six-upside .custom-accordion .custom-accordion-item butt
   color: rgba(255, 255, 255, 0.744);
   outline: none;
 }
-
 main .section-seven {
   background-color: #F1F1F1;
 }
@@ -387,16 +386,33 @@ main .section-seven .page-seven .page-seven-firstside hr {
   opacity: 0.1;
 }
 main .section-seven .page-seven .page-seven-firstside p {
-  width: 93%;
+  width: 90%;
+}
+main .section-seven .page-seven .page-seven-firstside .page-seven-third-p-element {
+  width: 531px;
+  letter-spacing: 0.2px;
+}
+main .section-seven .page-seven .page-seven-firstside .page-seven-third-p-element p {
+  width: 100%;
+  line-height: 24.8px;
+  letter-spacing: 3%;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 18px;
 }
 main .section-seven .page-seven .page-seven-firstside form .form-group,
 main .section-seven .page-seven .page-seven-firstside form .form-group-comment {
-  margin: 15px 0;
+  margin: 25px 0;
   height: 60px;
   width: 533px;
   border-radius: 5px;
   border: 1px solid #CACACA;
   overflow: hidden;
+  background-color: white;
+}
+main .section-seven .page-seven .page-seven-firstside form .form-group-comment {
+  height: 149px;
+  padding-top: 10px;
 }
 main .section-seven .page-seven .page-seven-firstside form input {
   margin-left: 10px;
@@ -405,13 +421,21 @@ main .section-seven .page-seven .page-seven-firstside form input {
   border: none;
   outline: none;
 }
+main .section-seven .page-seven .page-seven-firstside form input::-moz-placeholder, main .section-seven .page-seven .page-seven-firstside form textarea::-moz-placeholder {
+  color: black;
+}
+main .section-seven .page-seven .page-seven-firstside form input::placeholder,
+main .section-seven .page-seven .page-seven-firstside form textarea::placeholder {
+  color: black;
+}
 main .section-seven .page-seven .page-seven-firstside form textarea {
   margin-left: 10px;
   width: 520px;
-  height: 50px;
+  height: 139px;
   border-radius: 5px;
   border: none;
   outline: none;
+  resize: none;
 }
 main .section-seven .page-seven .page-seven-firstside form button {
   height: 48px;
@@ -424,7 +448,114 @@ main .section-seven .page-seven .page-seven-secondside {
 main .section-seven .page-seven .page-seven-secondside img {
   border-radius: 0px;
 }
+main #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+main #myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
 footer {
-  height: 100vh;
+  height: 505px;
+  background-color: #202020;
+}
+footer .logo-side img {
+  height: 53px;
+}
+footer .logo-side h1 {
+  width: 171px;
+  height: 29px;
+  font-size: 24px;
+  line-height: 29.05px;
+}
+footer .footer-firstside p {
+  width: 345px;
+  height: 88px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.87px;
+  line-height: 20px;
+  text-align: justify;
+  color: white;
+  margin: 30px 0 0;
+}
+footer .footer-firstside ul {
+  display: flex;
+  justify-content: space-between;
+  width: 48%;
+}
+footer .footer-firstside ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: red;
+}
+footer .footer-firstside ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer .footer-item h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  padding-bottom: 20px;
+}
+footer .footer-item ul li {
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 3px;
+}
+footer .footer-item ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 41px;
+  letter-spacing: 0em;
+  color: white;
+}
+footer .hr-up {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+footer .footer-downside {
+  margin-top: 3%;
+}
+footer .footer-downside p {
+  color: rgba(255, 255, 255, 0.4784313725);
+}
+footer .footer-downside ul {
+  display: flex;
+  width: 100%;
+}
+footer .footer-downside ul li {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+footer .footer-downside ul li a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  opacity: 0.8;
 }/*# sourceMappingURL=style.css.map */
