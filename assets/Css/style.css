@@ -38,13 +38,13 @@ header nav ul li a {
 }
 
 main .section-one {
+  height: 100vh;
   background-image: url("../img/section-one-bg/graphic-designers-meeting.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #5d5d5d;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
   top: -10px;
 }
 main .section-one .hero-side {
@@ -118,7 +118,7 @@ main .section-three .page-three-firstside p:nth-child(2) {
   width: 60%;
 }
 main .section-three .page-three-firstside p:nth-child(3) {
-  width: 70%;
+  width: 78%;
 }
 main .section-three .page-three-firstside button {
   width: 181px;
@@ -126,10 +126,11 @@ main .section-three .page-three-firstside button {
   border-radius: 5px;
 }
 main .section-three .page-three-secondside {
-  flex-wrap: wrap;
+  width: 50%;
+  padding: 0;
 }
 main .section-three .page-three-secondside .custom-cardsize {
-  width: 263px;
+  width: 48%;
   height: 168px;
   border-radius: 5px;
   background-color: white;
@@ -162,8 +163,9 @@ main .section-three .page-three-secondside .custom-cardsize .card-up-circular_ar
   height: 82px;
   overflow: hidden;
   position: absolute;
-  top: -25%;
-  right: 35%;
+  top: -27%;
+  right: 50%;
+  transform: translateX(50%);
 }
 main .section-three .page-three-secondside .custom-cardsize .card-up-circular_area img {
   border: 2px solid white;
@@ -176,7 +178,7 @@ main .section-three .page-three-secondside .custom-cardsize:nth-child(3), main .
   margin-top: 70px;
 }
 main .section-four .page-four-upside p {
-  width: 35%;
+  width: 40%;
 }
 main .section-four .page-four-upside .page-four-upside-first hr {
   margin-top: 12px;
@@ -207,6 +209,16 @@ main .section-four .page-four-bodyside-btns input:checked + label {
 }
 main .section-four .page-four-imageside {
   margin-top: 5%;
+  width: 100%;
+}
+main .section-four .page-four-imageside .custom-img-item {
+  width: 33.5%;
+}
+main .section-four .page-four-imageside .custom-img-item:nth-child(2) {
+  width: 33%;
+}
+main .section-four .page-four-imageside img {
+  width: 100%;
 }
 main .section-five {
   height: 100vh;
@@ -246,14 +258,17 @@ main .section-five .page-five-upside .circles .circle-2 {
   border: 2px solid red;
   background-color: black;
 }
+main .section-five .page-five-upside .page-five-ino-text {
+  width: 100%;
+}
 main .section-five .page-five-upside p {
-  width: 40%;
+  width: 45%;
 }
 main .section-five .page-five-body {
   margin-top: 9%;
 }
 main .section-five .page-five-body .custom-cardsize {
-  width: 263px;
+  width: 48%;
   height: 168px;
   border-radius: 5px;
   background-color: white;
@@ -286,8 +301,9 @@ main .section-five .page-five-body .custom-cardsize .card-up-circular_area {
   height: 82px;
   overflow: hidden;
   position: absolute;
-  top: -25%;
-  right: 35%;
+  top: -27%;
+  right: 50%;
+  transform: translateX(50%);
 }
 main .section-five .page-five-body .custom-cardsize .card-up-circular_area img {
   border: 2px solid white;
@@ -297,7 +313,7 @@ main .section-five .page-five-body .custom-cardsize .card-up-circular_area img {
   height: 100%;
 }
 main .section-five .page-five-body .custom-cardsize {
-  width: 369.86px;
+  width: 30%;
   height: 217.68px;
 }
 main .section-five .page-five-body .custom-cardsize .card-up-circular_area {
@@ -305,7 +321,6 @@ main .section-five .page-five-body .custom-cardsize .card-up-circular_area {
   background-color: #FF3839;
   width: 98.76px;
   height: 98.76px;
-  right: 36.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,7 +345,7 @@ main .section-six .page-six-upside {
   height: 30rem;
 }
 main .section-six .page-six-upside p {
-  width: 35%;
+  width: 48%;
   text-align: center;
 }
 main .section-six .page-six-upside .page-six-upside-first {
@@ -464,7 +479,7 @@ main #myBtn {
   font-size: 18px;
 }
 main #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
 }
 
 footer {
@@ -481,7 +496,7 @@ footer .logo-side h1 {
   line-height: 29.05px;
 }
 footer .footer-firstside p {
-  width: 345px;
+  width: 90%;
   height: 88px;
   font-size: 13px;
   font-weight: 400;
@@ -494,7 +509,7 @@ footer .footer-firstside p {
 footer .footer-firstside ul {
   display: flex;
   justify-content: space-between;
-  width: 48%;
+  width: 60%;
 }
 footer .footer-firstside ul li {
   display: flex;
@@ -502,8 +517,12 @@ footer .footer-firstside ul li {
   justify-content: center;
   height: 36px;
   width: 36px;
+  width: 100%;
   border-radius: 50%;
   background-color: red;
+}
+footer .footer-firstside ul li:first-child {
+  margin: 0;
 }
 footer .footer-firstside ul li a {
   text-decoration: none;
