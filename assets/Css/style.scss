@@ -8,6 +8,10 @@
     margin-top: 50px;
 }
 
+.w-98 {
+    width: 98%;
+}
+
 @mixin customize-hr {
     hr {
         margin-top: 12px;
@@ -29,7 +33,6 @@
 
 @mixin customize-card {
     .custom-cardsize {
-        // width: 263px; default
         width: 48%;
         height: 168px;
         border-radius: 5px;
@@ -168,39 +171,40 @@ main {
     }
 
     .section-two {
-        height: 100vh;
 
         .bg-image-firstside {
             background-image: url('../img/section-two/section-two_bg.png');
             background-repeat: no-repeat;
-            height: 508.5px;
-            width: 80%;
+            height: 507.5px;
+            width: 77%;
         }
 
         .page-two-secondside {
-            width: 46%;
             @include customize-hr();
 
             hr {
                 opacity: 0.1;
             }
 
+
+
             @include customize-btn();
         }
     }
 
     .section-three {
-        height: 100vh;
+        // height: 100vh;
         color: white;
         @include customize-hr();
 
         .page-three-firstside {
 
+
             p {
                 width: 100%;
 
                 &:nth-child(2) {
-                    width: 60%;
+                    width: 75%;
                 }
 
                 &:nth-child(3) {
@@ -213,17 +217,21 @@ main {
         }
 
         .page-three-secondside {
-            // flex-wrap: wrap;
-            width: 50%;
+            flex-wrap: wrap;
+            // width: 100%;
             padding: 0;
 
             @include customize-card();
 
             .custom-cardsize {
+                width: 46%;
+                margin-top: 70px;
+                margin: 70px 13.6px 0;
 
-                &:nth-child(3),
-                &:nth-child(4) {
-                    margin-top: 70px;
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-top: 50px;
                 }
             }
         }
@@ -235,7 +243,7 @@ main {
         .page-four-upside {
 
             p {
-                width: 40%;
+                width: 50%;
             }
 
             .page-four-upside-first {
@@ -251,6 +259,7 @@ main {
 
         .page-four-bodyside-btns {
             label {
+                margin-top: 15px;
                 background-color: #F2F2F2;
                 border: none;
                 color: black;
@@ -269,19 +278,26 @@ main {
         }
 
         .page-four-imageside {
-            margin-top: 5%;
+            // margin-top: 5%;
             width: 100%;
 
             .custom-img-item {
                 width: 33.5%;
+                display: inline;
+                margin-top: 30px;
 
                 &:nth-child(2) {
                     width: 33%;
+                    display: inline;
+                    margin-top: 0;
+
                 }
             }
 
             img {
                 width: 100%;
+
+             
             }
         }
     }
@@ -290,6 +306,7 @@ main {
         height: 100vh;
 
         .page-five-upside {
+            flex-wrap: wrap;
 
             @include customize-hr();
 
@@ -299,6 +316,7 @@ main {
             }
 
             .circles {
+                flex-wrap: wrap;
                 margin-top: 3px;
 
                 hr {
@@ -325,12 +343,13 @@ main {
                 }
             }
 
-            .page-five-ino-text {
+            .page-five-into-text {
                 width: 100%;
-            }
 
-            p {
-                width: 45%;
+                p{
+                width: 41%;
+
+                };
             }
         }
 
@@ -347,8 +366,10 @@ main {
                 .card-up-circular_area {
                     border: 3px solid white;
                     background-color: #FF3839;
-                    width: 98.76px;
-                    height: 98.76px;
+                    // width: 98.76px;
+                    width: 25%;
+                    // height: 98.76px;
+                    height: 45%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -393,7 +414,7 @@ main {
                 hr {
                     width: 163px;
                     border-color: #D8D8D8;
-                }           
+                }
             }
 
             .custom-accordion {
@@ -543,6 +564,7 @@ main {
     }
 
 }
+
 footer {
     height: 505px;
     background-color: #202020;
@@ -578,7 +600,7 @@ footer {
                 border-radius: 50%;
                 background-color: red;
 
-                &:first-child{
+                &:first-child {
                     margin: 0;
                 }
 

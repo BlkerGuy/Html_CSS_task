@@ -8,6 +8,10 @@
   margin-top: 50px;
 }
 
+.w-98 {
+  width: 98%;
+}
+
 header {
   width: 100%;
   background-color: #202020;
@@ -71,17 +75,11 @@ main .section-one .hero-side button {
   height: 48px;
   border-radius: 5px;
 }
-main .section-two {
-  height: 100vh;
-}
 main .section-two .bg-image-firstside {
   background-image: url("../img/section-two/section-two_bg.png");
   background-repeat: no-repeat;
-  height: 508.5px;
-  width: 80%;
-}
-main .section-two .page-two-secondside {
-  width: 46%;
+  height: 507.5px;
+  width: 77%;
 }
 main .section-two .page-two-secondside hr {
   margin-top: 12px;
@@ -100,7 +98,6 @@ main .section-two .page-two-secondside button {
   border-radius: 5px;
 }
 main .section-three {
-  height: 100vh;
   color: white;
 }
 main .section-three hr {
@@ -115,7 +112,7 @@ main .section-three .page-three-firstside p {
   width: 100%;
 }
 main .section-three .page-three-firstside p:nth-child(2) {
-  width: 60%;
+  width: 75%;
 }
 main .section-three .page-three-firstside p:nth-child(3) {
   width: 78%;
@@ -126,7 +123,7 @@ main .section-three .page-three-firstside button {
   border-radius: 5px;
 }
 main .section-three .page-three-secondside {
-  width: 50%;
+  flex-wrap: wrap;
   padding: 0;
 }
 main .section-three .page-three-secondside .custom-cardsize {
@@ -174,11 +171,16 @@ main .section-three .page-three-secondside .custom-cardsize .card-up-circular_ar
   width: 100%;
   height: 100%;
 }
-main .section-three .page-three-secondside .custom-cardsize:nth-child(3), main .section-three .page-three-secondside .custom-cardsize:nth-child(4) {
+main .section-three .page-three-secondside .custom-cardsize {
+  width: 46%;
   margin-top: 70px;
+  margin: 70px 13.6px 0;
+}
+main .section-three .page-three-secondside .custom-cardsize:nth-child(1), main .section-three .page-three-secondside .custom-cardsize:nth-child(2) {
+  margin-top: 50px;
 }
 main .section-four .page-four-upside p {
-  width: 40%;
+  width: 50%;
 }
 main .section-four .page-four-upside .page-four-upside-first hr {
   margin-top: 12px;
@@ -193,6 +195,7 @@ main .section-four .page-four-upside .page-four-upside-first hr {
   border-color: #D8D8D8;
 }
 main .section-four .page-four-bodyside-btns label {
+  margin-top: 15px;
   background-color: #F2F2F2;
   border: none;
   color: black;
@@ -208,20 +211,26 @@ main .section-four .page-four-bodyside-btns input:checked + label {
   background-color: red;
 }
 main .section-four .page-four-imageside {
-  margin-top: 5%;
   width: 100%;
 }
 main .section-four .page-four-imageside .custom-img-item {
   width: 33.5%;
+  display: inline;
+  margin-top: 30px;
 }
 main .section-four .page-four-imageside .custom-img-item:nth-child(2) {
   width: 33%;
+  display: inline;
+  margin-top: 0;
 }
 main .section-four .page-four-imageside img {
   width: 100%;
 }
 main .section-five {
   height: 100vh;
+}
+main .section-five .page-five-upside {
+  flex-wrap: wrap;
 }
 main .section-five .page-five-upside hr {
   margin-top: 12px;
@@ -236,6 +245,7 @@ main .section-five .page-five-upside hr {
   border: 0.1px solid;
 }
 main .section-five .page-five-upside .circles {
+  flex-wrap: wrap;
   margin-top: 3px;
 }
 main .section-five .page-five-upside .circles hr {
@@ -258,11 +268,11 @@ main .section-five .page-five-upside .circles .circle-2 {
   border: 2px solid red;
   background-color: black;
 }
-main .section-five .page-five-upside .page-five-ino-text {
+main .section-five .page-five-upside .page-five-into-text {
   width: 100%;
 }
-main .section-five .page-five-upside p {
-  width: 45%;
+main .section-five .page-five-upside .page-five-into-text p {
+  width: 41%;
 }
 main .section-five .page-five-body {
   margin-top: 9%;
@@ -319,8 +329,8 @@ main .section-five .page-five-body .custom-cardsize {
 main .section-five .page-five-body .custom-cardsize .card-up-circular_area {
   border: 3px solid white;
   background-color: #FF3839;
-  width: 98.76px;
-  height: 98.76px;
+  width: 25%;
+  height: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
