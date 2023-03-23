@@ -185,15 +185,11 @@ main {
             hr {
                 opacity: 0.1;
             }
-
-
-
             @include customize-btn();
         }
     }
 
     .section-three {
-        // height: 100vh;
         color: white;
         @include customize-hr();
 
@@ -218,13 +214,12 @@ main {
 
         .page-three-secondside {
             flex-wrap: wrap;
-            // width: 100%;
             padding: 0;
 
             @include customize-card();
 
             .custom-cardsize {
-                width: 46%;
+                width: 44%;
                 margin-top: 70px;
                 margin: 70px 13.6px 0;
 
@@ -278,7 +273,6 @@ main {
         }
 
         .page-four-imageside {
-            // margin-top: 5%;
             width: 100%;
 
             .custom-img-item {
@@ -290,21 +284,16 @@ main {
                     width: 33%;
                     display: inline;
                     margin-top: 0;
-
                 }
             }
 
             img {
                 width: 100%;
-
-             
             }
         }
     }
 
     .section-five {
-        height: 100vh;
-
         .page-five-upside {
             flex-wrap: wrap;
 
@@ -346,10 +335,9 @@ main {
             .page-five-into-text {
                 width: 100%;
 
-                p{
-                width: 41%;
-
-                };
+                p {
+                    width: 41%;
+                }
             }
         }
 
@@ -359,20 +347,16 @@ main {
             @include customize-card();
 
             .custom-cardsize {
-                // width: 369.86px;
-                width: 30%;
+                width: 369.86px;
                 height: 217.68px;
+
+               
 
                 .card-up-circular_area {
                     border: 3px solid white;
                     background-color: #FF3839;
-                    // width: 98.76px;
-                    width: 25%;
-                    // height: 98.76px;
+                    width: 100px;
                     height: 45%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
 
                     img {
                         border: none;
@@ -396,10 +380,9 @@ main {
     }
 
     .section-six {
-        height: 100vh;
+     height: 100vh;
 
         .page-six-upside {
-            height: 30rem;
 
             p {
                 width: 48%;
@@ -419,7 +402,7 @@ main {
 
             .custom-accordion {
                 height: 84px;
-                width: 972px;
+                width: 100%;
                 padding-bottom: 12%;
 
                 .custom-accordion-item {
@@ -455,7 +438,6 @@ main {
         background-color: #F1F1F1;
 
         .page-seven {
-
             .page-seven-firstside {
                 @include customize-hr();
 
@@ -464,11 +446,11 @@ main {
                 }
 
                 p {
-                    width: 90%;
+                    width: 100%;
                 }
 
                 .page-seven-third-p-element {
-                    width: 531px;
+                    width: 100%;
                     letter-spacing: 0.2px;
 
                     p {
@@ -488,12 +470,17 @@ main {
                     .form-group-comment {
                         margin: 25px 0;
                         height: 60px;
-                        width: 533px;
+                        width: 100%;
                         border-radius: 5px;
                         border: 1px solid #CACACA;
                         overflow: hidden;
                         background-color: white;
                     }
+
+                    .form-group:hover ,.form-group-comment:hover {
+                        border: 2px solid purple;
+                    }
+
 
                     .form-group-comment {
                         height: 149px;
@@ -503,7 +490,7 @@ main {
                     input {
                         margin-left: 10px;
                         height: 58px;
-                        width: 520px;
+                        width: 100%;
                         border: none;
                         outline: none;
                     }
@@ -515,7 +502,7 @@ main {
 
                     textarea {
                         margin-left: 10px;
-                        width: 520px;
+                        width: 100%;
                         height: 139px;
                         border-radius: 5px;
                         border: none;
@@ -533,7 +520,7 @@ main {
             }
 
             .page-seven-secondside {
-                height: 90%;
+                height: 100%;
 
                 img {
                     border-radius: 0px;
@@ -595,7 +582,7 @@ footer {
                 align-items: center;
                 justify-content: center;
                 height: 36px;
-                width: 36px;
+                margin-left: 5px;
                 width: 100%;
                 border-radius: 50%;
                 background-color: red;

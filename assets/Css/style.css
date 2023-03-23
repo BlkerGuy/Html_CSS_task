@@ -172,7 +172,7 @@ main .section-three .page-three-secondside .custom-cardsize .card-up-circular_ar
   height: 100%;
 }
 main .section-three .page-three-secondside .custom-cardsize {
-  width: 46%;
+  width: 44%;
   margin-top: 70px;
   margin: 70px 13.6px 0;
 }
@@ -225,9 +225,6 @@ main .section-four .page-four-imageside .custom-img-item:nth-child(2) {
 }
 main .section-four .page-four-imageside img {
   width: 100%;
-}
-main .section-five {
-  height: 100vh;
 }
 main .section-five .page-five-upside {
   flex-wrap: wrap;
@@ -323,17 +320,14 @@ main .section-five .page-five-body .custom-cardsize .card-up-circular_area img {
   height: 100%;
 }
 main .section-five .page-five-body .custom-cardsize {
-  width: 30%;
+  width: 369.86px;
   height: 217.68px;
 }
 main .section-five .page-five-body .custom-cardsize .card-up-circular_area {
   border: 3px solid white;
   background-color: #FF3839;
-  width: 25%;
+  width: 100px;
   height: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 main .section-five .page-five-body .custom-cardsize .card-up-circular_area img {
   border: none;
@@ -350,9 +344,6 @@ main .section-five .page-five-body i:hover {
 }
 main .section-six {
   height: 100vh;
-}
-main .section-six .page-six-upside {
-  height: 30rem;
 }
 main .section-six .page-six-upside p {
   width: 48%;
@@ -375,7 +366,7 @@ main .section-six .page-six-upside .page-six-upside-first hr {
 }
 main .section-six .page-six-upside .custom-accordion {
   height: 84px;
-  width: 972px;
+  width: 100%;
   padding-bottom: 12%;
 }
 main .section-six .page-six-upside .custom-accordion .custom-accordion-item {
@@ -411,10 +402,10 @@ main .section-seven .page-seven .page-seven-firstside hr {
   opacity: 0.1;
 }
 main .section-seven .page-seven .page-seven-firstside p {
-  width: 90%;
+  width: 100%;
 }
 main .section-seven .page-seven .page-seven-firstside .page-seven-third-p-element {
-  width: 531px;
+  width: 100%;
   letter-spacing: 0.2px;
 }
 main .section-seven .page-seven .page-seven-firstside .page-seven-third-p-element p {
@@ -429,11 +420,14 @@ main .section-seven .page-seven .page-seven-firstside form .form-group,
 main .section-seven .page-seven .page-seven-firstside form .form-group-comment {
   margin: 25px 0;
   height: 60px;
-  width: 533px;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid #CACACA;
   overflow: hidden;
   background-color: white;
+}
+main .section-seven .page-seven .page-seven-firstside form .form-group:hover, main .section-seven .page-seven .page-seven-firstside form .form-group-comment:hover {
+  border: 2px solid purple;
 }
 main .section-seven .page-seven .page-seven-firstside form .form-group-comment {
   height: 149px;
@@ -442,7 +436,7 @@ main .section-seven .page-seven .page-seven-firstside form .form-group-comment {
 main .section-seven .page-seven .page-seven-firstside form input {
   margin-left: 10px;
   height: 58px;
-  width: 520px;
+  width: 100%;
   border: none;
   outline: none;
 }
@@ -455,7 +449,7 @@ main .section-seven .page-seven .page-seven-firstside form textarea::placeholder
 }
 main .section-seven .page-seven .page-seven-firstside form textarea {
   margin-left: 10px;
-  width: 520px;
+  width: 100%;
   height: 139px;
   border-radius: 5px;
   border: none;
@@ -468,7 +462,7 @@ main .section-seven .page-seven .page-seven-firstside form button {
   border-radius: 5px;
 }
 main .section-seven .page-seven .page-seven-secondside {
-  height: 90%;
+  height: 100%;
 }
 main .section-seven .page-seven .page-seven-secondside img {
   border-radius: 0px;
@@ -526,7 +520,7 @@ footer .footer-firstside ul li {
   align-items: center;
   justify-content: center;
   height: 36px;
-  width: 36px;
+  margin-left: 5px;
   width: 100%;
   border-radius: 50%;
   background-color: red;
