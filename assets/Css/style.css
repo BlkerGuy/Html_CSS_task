@@ -466,6 +466,8 @@ main .section-seven .page-seven .page-seven-secondside {
 }
 main .section-seven .page-seven .page-seven-secondside img {
   border-radius: 0px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 main #myBtn {
   display: none;
