@@ -490,7 +490,7 @@ main #myBtn:hover {
 }
 
 footer {
-  height: 505px;
+  height: 100%;
   background-color: #202020;
 }
 footer .logo-side img {
